@@ -1,7 +1,5 @@
 var path = require('path');
 
-console.log("hello, fromt html routes");
-
 module.exports = function (app) {
 
 	// HTML GET Requests
@@ -11,7 +9,7 @@ module.exports = function (app) {
 
 	app.get('/index', function (req, res) {
 		console.log('hello index');
-		res.sendFile(path.join('/../public/index.html'));
+		res.sendFile(path.join(__dirname + '/../public/index.html'));
 	});
 
 	app.get('/survey', function (req, res) {
@@ -25,9 +23,5 @@ module.exports = function (app) {
 		res.sendFile(path.join(__dirname + '/../public/index.html'));
 	});
 
-	app.post(function (req, res){
-
-		console.log("bougarbutt");
-		res.sendFile()
-	});
+	
 };

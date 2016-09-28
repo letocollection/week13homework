@@ -4,7 +4,6 @@ var friends = require('../data/friends.js');
 // 	userData.push(req.body);
 // });
 
-console.log("hello, fromt api routes");
 
 module.exports = function (app) {
 	// API GET Requests
@@ -13,11 +12,9 @@ module.exports = function (app) {
 	// (ex: localhost:PORT/api/admin... they are shown a JSON of the data in the table)
 	// ---------------------------------------------------------------------------
 
-	app.get('index.html', function (req, res) {
-		// res.json(friends);
-	});
+	
 
-	app.get('survey.html', function (req, res) {
+	app.get('survey.html', function (req, res) {x
 
 	});
 
